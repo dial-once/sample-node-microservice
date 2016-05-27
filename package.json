@@ -1,0 +1,20 @@
+{
+  "name": "{service-name}",
+  "version": "0.1.0",
+  "description": "A sample microservice using nodejs",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dial-once/{service-name}.git"
+  },
+  "author": "Dial Once",
+  "license": "ISC",
+  "dependencies": {
+    "@dialonce/boot": "^0.3.0",
+    "bugsnag": "^1.8.0",
+    "bunnymq": "^2.2.1",
+    "dotenv": "^2.0.0",
+    "le_node": "^1.6.7",
+    "winston": "^2.2.0"
+  }
+}
