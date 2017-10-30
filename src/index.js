@@ -2,20 +2,18 @@
  * @module service
  */
 require('dotenv').config({ silent: true });
-require('@dialonce/boot')({
-  LOGS_TOKEN: process.env.LOGS_TOKEN,
-  BUGS_TOKEN: process.env.BUGS_TOKEN
-});
 
-/* var amqp = require('bunnymq')({ consumerSuffix: process.env.LOCAL_QUEUE }),
-  winston = require('winston');*/
+require('logtify-logstash')();
+require('logtify-bugsnag')();
+const { logger } = require('logtify')({ presets: ['dial-once', 'prefix'] });
+
+// const amqp = require('bunnymq')({ consumerSuffix: process.env.LOCAL_QUEUE });
 
 /**
  * define here all of your queues to consumer messages from the broker, ie:
- * amqp.consumer.consume('hello:world', (msg) => { winston.log(msg); } );
+ * amqp.consumer.consume('hello:world', (msg) => { logger.log('info', msg); } );
  * if the caller expect a response, you can give it some by returning something in the function (can be a promise)
  * amqp.consumer.consume('hello:world', (msg) => { return msg; } );
  */
 
-/* eslint no-console: "off"*/
-console.log('Hello world!');
+logger.info('Hello world!');
