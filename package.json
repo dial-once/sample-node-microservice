@@ -10,11 +10,10 @@
   "author": "Dial Once",
   "license": "ISC",
   "dependencies": {
-    "@dialonce/boot": "^0.3.0",
-    "bugsnag": "^1.8.0",
-    "bunnymq": "^2.2.1",
-    "dotenv": "^2.0.0",
-    "le_node": "^1.6.7",
-    "winston": "^2.2.0"
+    "bunnymq": "^2.3.2",
+    "dotenv": "^4.0.0",
+    "logtify": "^1.1.3",
+    "logtify-bugsnag": "^1.1.0",
+    "logtify-logstash": "^1.1.0"
   }
 }
