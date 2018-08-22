@@ -1,6 +1,9 @@
 .PHONY: test
 
 init:
+	sed -i 's/{service-name}/$(NAME)/g' package.json
+	sed -i 's/{service-name}/$(NAME)/g' sonar-project.properties
+	sed -i 's/{service-name}/$(NAME)/g' README.md
 	cp .env.tpl .env
 
 deps:
