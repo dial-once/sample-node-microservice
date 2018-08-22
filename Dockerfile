@@ -1,11 +1,7 @@
-FROM dialonce/nodejs:latest as builder
+FROM dialonce/nodejs:latest
 
 WORKDIR /app
 COPY . ./
-RUN apk add --no-cache make && npm install --production
-
-FROM dialonce/nodejs:latest
-WORKDIR /app
-COPY --from=builder /app /app
+RUN npm install --production
 
 CMD ["node", "src/index.js"]
