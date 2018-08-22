@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "{service-name}",
   "version": "0.1.0",
   "description": "A sample microservice using nodejs",
   "main": "src/index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dial-once/.git"
+    "url": "git+https://github.com/dial-once/{service-name}.git"
   },
   "author": "Dial Once",
   "license": "ISC",
