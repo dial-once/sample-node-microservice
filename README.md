@@ -38,8 +38,8 @@ make test
 make sonar
 ```
 
-# {service-name}
+#
 
-[![Circle CI](https://circleci.com/gh/dial-once/{service-name}/tree/develop.svg?style=shield)](https://circleci.com/gh/dial-once/{service-name})
-[![Coverage](http://badges.dialonce.io/?resource={service-name}&metrics=coverage)](http://sonar.dialonce.io/overview/coverage?id={service-name})
-[![Sqale](http://badges.dialonce.io/?resource={service-name}&metrics=sqale_rating)](http://sonar.dialonce.io/overview/debt?id={service-name})
+[![Circle CI](https://circleci.com/gh/dial-once//tree/develop.svg?style=shield)](https://circleci.com/gh/dial-once/)
+[![Coverage](http://badges.dialonce.io/?resource=&metrics=coverage)](http://sonar.dialonce.io/overview/coverage?id=)
+[![Sqale](http://badges.dialonce.io/?resource=&metrics=sqale_rating)](http://sonar.dialonce.io/overview/debt?id=)
